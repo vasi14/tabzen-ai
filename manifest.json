@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "TabZen AI",
+  "version": "1.0",
+  "description": "An agentic AI tab janitor that organizes your tabs, removes duplicates, and understands contexts.",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_title": "Open TabZen AI"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
